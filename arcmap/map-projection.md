@@ -1,6 +1,6 @@
 # Use a different map projection
 
-By default, ArcMap will display your map using the coordinate system (map projection) of the first layer you added. This can especially be an issue for large, continental-scale maps. For example, if the first data layer uses latitude and longitude coordinates, a map of the United States may look slightly stretched out, like the map on the left:
+By default, ArcMap will display your map using the coordinate system, or map projection, of the first layer you added. This can especially be an issue for large, continental-scale maps. For example, if the first data layer uses latitude and longitude coordinates, a map of the United States may look slightly stretched out, like the map on the left:
 
 ![map projections](map-projection.png)
 
