@@ -1,8 +1,5 @@
----
-title: Cornell GIS Cookbook
-permalink: /
----
+# Cornell GIS Cookbook
 
 {% for page in site.pages %}
-<p>{{page.title}}</p>
+<p><a href="{{page.url}}">{{page.title}}</a></p>
 {% endfor %}
