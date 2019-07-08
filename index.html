@@ -3,6 +3,6 @@ layout: default
 title: Cornell GIS Cookbook (index)
 ---
 
-{% for page in site.pages %}
-<p><a href="{{page.id}}">{{page.title}}</a></p>
+{% for p in site.pages %}
+<p><a href="{{p.name}}">{{p.title}}</a> id={{p.id}} dir={{p.dir}} name={{p.name}} path={{p.path}} next={{p.next}}</p>
 {% endfor %}
