@@ -8,10 +8,11 @@ header {
   background: #b31b1b;
   padding: 0.5em 1em;
   font-family: 'Candara', 'Arial', 'Helvetica', sans-serif,
-  font-size:200%;
+  font-size: 200%;
 }
 header a {
   color: #fff;
+  text-decoration: none
 }
 
 main {
