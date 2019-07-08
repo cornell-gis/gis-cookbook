@@ -1,5 +1,9 @@
+---
+permalink: /gis-cookbook
+---
+
 # Cornell GIS Cookbook
 
 {% for page in site.pages %}
-<p><a href="{{page.name}}">{{page.title}}</a></p>
+<p><a href="{{page.path}}">{{page.title}}</a></p>
 {% endfor %}
