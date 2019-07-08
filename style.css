@@ -1,17 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Candara', sans-serif;
+  font-family: 'Arial', 'Helvetica', sans-serif;
 }
 
 header {
   background: #b31b1b;
   padding: 0.5em 1em;
+  font-family: 'Candara', 'Arial', 'Helvetica', sans-serif,
+  font-size:200%;
 }
 header a {
   color: #fff;
 }
 
 main {
-  padding: 1em
+  padding: 1em;
 }
