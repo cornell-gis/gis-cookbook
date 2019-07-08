@@ -1,6 +1,4 @@
----
-title: Creating contour lines from .las LiDAR data
----
+# Creating contour lines from .las LiDAR data
 
 LiDAR pointcloud datasets are collections of three-dimensional x,y,z data, often distributed in LAS format with a .las filename extension.  LAS files can be downloaded from sites such as [OpenTopography.org](https://opentopography.org/) and the [US Interagency Elevation Inventory](https://coast.noaa.gov/inventory/).
 
