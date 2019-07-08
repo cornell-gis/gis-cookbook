@@ -1,5 +1,9 @@
-# Cornell GIS Cookbook
+---
+layout: default
+title: Cornell GIS Cookbook (index)
+permalink: /gis-cookbook
+---
 
 {% for page in site.pages %}
-<p><a href="{{page.path}}">{{page.title}}</a></p>
+<p><a href="{{page.id}}">{{page.title}}</a></p>
 {% endfor %}
