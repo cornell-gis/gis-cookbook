@@ -4,5 +4,5 @@ title: Cornell GIS Cookbook (index)
 ---
 
 {% for p in site.pages %}
-<p><a href="{{p.name}}">{{p.title}}</a> id={{p.id}} dir={{p.dir}} name={{p.name}} path={{p.path}} next={{p.next}}</p>
+<p><a href="/gis-cookbook/{{p.path | remove: '.md'}}">{{p.title}}</a></p>
 {% endfor %}
