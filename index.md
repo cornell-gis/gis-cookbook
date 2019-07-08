@@ -1,7 +1,3 @@
----
-permalink: /gis-cookbook
----
-
 # Cornell GIS Cookbook
 
 {% for page in site.pages %}
