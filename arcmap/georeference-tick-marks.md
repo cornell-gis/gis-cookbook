@@ -1,4 +1,4 @@
-# Georeference scanned maps using coordinate marks (ArcGIS)
+# Georeference scanned maps using coordinate marks
 
 ## Define Projection
 1. In ArcCatalog, from the left Explorer pane, find the scanned image and right click.
