@@ -18,17 +18,14 @@ header a {
 
 main {
   padding: 1em;
-}
-
-main:after {
-  content: "";
-  display: table;
-  clear: both;
+  margin-bottom:3em
 }
 
 footer {
   padding: 3em 1em 1em;
   text-align: right;
+  border-top: 1px solid #eee;
+  color: #ccc;
 }
 
 #qgis {
