@@ -24,4 +24,4 @@ Next we sum the road lengths by state. From the toolbox, select Analysis Tools >
 
 This creates a new table (`ROAD_Stats.dbf`), with each row containing the `STATEABBR` and the total road length for the corresponding state. You will need to click the "Source" tab in the data frame in order to see the `ROAD_Stats.dbf` table.
 
-Join this data to the state attribute table using the `STATEABBR` field – for details, see the [Join Table](arcmap/join-table.md) recipe.
+Join this data to the state attribute table using the `STATEABBR` field – for details, see the [Join Table](join-table) recipe.
