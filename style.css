@@ -21,11 +21,13 @@ header a:hover {
 
 main {
   padding: 1em;
-  margin-bottom:3em
+  max-width: 60em;
+  margin: 0 auto 3em;
 }
 main:after {
   clear: both;
   content: '';
+  display: table;
 }
 
 footer {
