@@ -4,23 +4,23 @@ title: Cornell GIS Cookbook
 ---
 
 <div id='qgis'>
-## QGIS
-<ul>
-  {% for p in site.pages %}
-    {% if p.path contains 'qgis' %}
-      <li><a href="/gis-cookbook/{{p.path | remove: '.md'}}">{{p.title}}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <h2>QGIS</h2>
+  <ul>
+    {% for p in site.pages %}
+      {% if p.path contains 'qgis' %}
+        <li><a href="/gis-cookbook/{{p.path | remove: '.md'}}">{{p.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>
 
 <div id='arcmap'>
-## ArcMap
-<ul>
-  {% for p in site.pages %}
-    {% if p.path contains 'arcmap' %}
-      <li><a href="/gis-cookbook/{{p.path | remove: '.md'}}">{{p.title}}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <h2>ArcMap</h2>
+  <ul>
+    {% for p in site.pages %}
+      {% if p.path contains 'arcmap' %}
+        <li><a href="/gis-cookbook/{{p.path | remove: '.md'}}">{{p.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>
