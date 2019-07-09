@@ -1,8 +1,26 @@
 ---
 layout: default
-title: Cornell GIS Cookbook (index)
+title: Cornell GIS Cookbook
 ---
 
-{% for p in site.pages %}
-<p><a href="/gis-cookbook/{{p.path | remove: '.md'}}">{{p.title}}</a></p>
-{% endfor %}
+<div id='qgis'>
+## QGIS
+<ul>
+  {% for p in site.pages %}
+    {% if p.path contains 'qgis' %}
+      <li><a href="/gis-cookbook/{{p.path | remove: '.md'}}">{{p.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+</div>
+
+<div id='arcmap'>
+## ArcMap
+<ul>
+  {% for p in site.pages %}
+    {% if p.path contains 'arcmap' %}
+      <li><a href="/gis-cookbook/{{p.path | remove: '.md'}}">{{p.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+</div>
