@@ -19,3 +19,17 @@ header a {
 main {
   padding: 1em;
 }
+
+#qgis {
+  width: 48%;
+  padding: 1%;
+  position: absolute;
+  left: 0;
+}
+
+#arcmap {
+  width: 48%;
+  padding: 1%;
+  position:absolute;
+  left: 50%;
+}
