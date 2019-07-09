@@ -7,7 +7,12 @@
 
 <body>
   <header>
-    <a href="/gis-cookbook">Cornell GIS Cookbook: {{page.path | split: '/' | first}} </a>
+    <a href="/gis-cookbook">Cornell Library GIS Cookbook</a>:
+    {% if page.path contains 'arcmap' %}
+      ArcMap
+    {% elsif page.path contains 'qgis' %}
+      QGIS
+    {% endif %}
   </header>
   <main>{{ content }}</main>
 </body>
