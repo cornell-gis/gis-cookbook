@@ -1,2 +1,2 @@
-plugins:
+gems:
   - jekyll-last-modified-at
