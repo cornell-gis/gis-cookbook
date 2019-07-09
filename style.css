@@ -13,23 +13,27 @@ header {
 }
 header a {
   color: #fff;
-  text-decoration: none
+  text-decoration: none;
 }
 
 main {
   padding: 1em;
 }
 
+footer {
+  margin-top: 2em;
+  padding: 1em;
+  text-align: right;
+}
+
 #qgis {
+  float: left;
   width: 48%;
   padding: 1%;
-  position: absolute;
-  left: 0;
 }
 
 #arcmap {
+  float: left;
   width: 48%;
   padding: 1%;
-  position:absolute;
-  left: 50%;
 }
