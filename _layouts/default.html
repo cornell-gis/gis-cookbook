@@ -15,7 +15,7 @@
     {% endif %}
   </header>
   <main>{{ content }}</main>
-  <footer>Last modified {{ page.date }}</footer>
+  <footer>Last modified {{ page.last_modified_at | date: '%Y-%m-%d' }}</footer>
 </body>
 
 </html>
