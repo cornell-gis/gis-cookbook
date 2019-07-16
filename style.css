@@ -35,18 +35,18 @@ nav a:hover {
 }
 
 main {
-  padding: 1% 2% 1% 1%;
+  padding: 0 2% 1% 1%;
   width:72%;
   max-width: 60em;
   float: left;
 }
-main:after {
-  clear: both;
-  content: '';
-  display: table;
+
+h1, h2 {
+  margin: 0.5em 0;
 }
 
 footer {
+  clear: both;
   padding: 1em;
   text-align: right;
   border-top: 1px solid #eee;
