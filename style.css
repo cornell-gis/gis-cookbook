@@ -22,12 +22,23 @@ nav {
   float: left;
   width: 23%;
   padding: 1%;
+  background: #eee;
+  height: 100%;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #008;
 }
 
 main {
-  padding: 1%;
-  width:73%;
+  padding: 1% 2% 1% 1%;
+  width:72%;
   max-width: 60em;
+  float: left;
 }
 main:after {
   clear: both;
