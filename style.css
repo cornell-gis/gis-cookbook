@@ -9,7 +9,6 @@ header {
   color: #fff;
   padding: 0.5em 1em;
   font-family: 'Candara', 'Arial', 'Helvetica', sans-serif;
-  font-size: 200%;
 }
 header a {
   color: #fff;
@@ -17,6 +16,11 @@ header a {
 }
 header a:hover {
   color: #ddd;
+}
+
+aside {
+  position: fixed;
+  margin: 1em;
 }
 
 main {
