@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
   <link rel="stylesheet" href="/gis-cookbook/style.css" />
@@ -7,15 +7,27 @@
 
 <body>
   <header>
-    <h1><a href="/gis-cookbook">Cornell Library GIS Cookbook</a></h1>
+    <a href="/gis-cookbook">Cornell Library GIS Cookbook</a>
   </header>
-  <aside>
+  <nav>
     {% if page.path contains 'arcmap' %}
-      <img src="arcmap-logo.png" alt="ArcMap" />
+      {% assign software = 'ArcMap' %}
     {% elsif page.path contains 'qgis' %}
-      <img src="qgis-logo.png" alt="QGIS" />
+      {% assign software = 'QGIS' %}
     {% endif %}
-  </aside>
+    {% if software %}
+      {% assign lower = software | downcase %}
+      <img src="{{lower}}-logo.png" alt="" />
+      <p>{{software}} recipes</p>
+      <ul>
+      {% for p in site.pages %}
+        {% if p.path contains lower %}
+          <li><a href="/gis-cookbook/{{p.path | remove: '.md'}}">{{p.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    {% endif %}
+  </nav>
   <main>{{ content }}</main>
   <footer><a href='https://github.com/kgjenkins/gis-cookbook/blob/master/{{ page.path }}'>page source</a></footer>
 </body>

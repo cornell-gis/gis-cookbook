@@ -7,8 +7,9 @@ body {
 header {
   background: #b31b1b;
   color: #fff;
-  padding: 0.5em 1em;
+  padding: 0.2em 0.5em;
   font-family: 'Candara', 'Arial', 'Helvetica', sans-serif;
+  font-size: 200%;
 }
 header a {
   color: #fff;
@@ -18,23 +19,40 @@ header a:hover {
   color: #ddd;
 }
 
-aside {
-  position: fixed;
-  margin: 1em;
+nav {
+  float: left;
+  width: 23%;
+  padding: 1%;
+  background: #eee;
+  height: 100%;
+}
+
+nav p {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
 main {
-  padding: 1em;
+  padding: 0 2% 1% 1%;
+  width:72%;
   max-width: 60em;
-  margin: 0 auto 3em;
+  float: left;
 }
-main:after {
-  clear: both;
-  content: '';
-  display: table;
+
+h1, h2 {
+  margin: 0.5em 0;
 }
 
 footer {
+  clear: both;
   padding: 1em;
   text-align: right;
   border-top: 1px solid #eee;
