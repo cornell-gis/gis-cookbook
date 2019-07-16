@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
   <link rel="stylesheet" href="/gis-cookbook/style.css" />
@@ -7,7 +7,7 @@
 
 <body>
   <header>
-    <h1><a href="/gis-cookbook">Cornell Library GIS Cookbook</a></h1>
+    <a href="/gis-cookbook">Cornell Library GIS Cookbook</a>
   </header>
   <nav>
     {% if page.path contains 'arcmap' %}
@@ -17,7 +17,7 @@
     {% endif %}
     {% if software %}
       {% assign lower = software | downcase %}
-      <img src="{{lower}}-logo.png" alt="{{software}}" />
+      <img src="{{lower}}-logo.png" alt="" />
       <p>{{software}} recipes</p>
       <ul>
       {% for p in site.pages %}
