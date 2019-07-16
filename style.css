@@ -26,6 +26,11 @@ nav {
   height: 100%;
 }
 
+nav p {
+  font-weight: bold;
+  font-size: 150%;
+}
+
 nav a {
   color: #000;
   text-decoration: none;
