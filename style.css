@@ -31,7 +31,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: #008;
+  text-decoration: underline;
 }
 
 main {
