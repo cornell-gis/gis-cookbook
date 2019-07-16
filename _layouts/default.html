@@ -9,13 +9,21 @@
   <header>
     <h1><a href="/gis-cookbook">Cornell Library GIS Cookbook</a></h1>
   </header>
-  <aside>
+  <nav>
     {% if page.path contains 'arcmap' %}
       <img src="arcmap-logo.png" alt="ArcMap" />
+      <p>ArcMap recipes</p>
+      <ul>
+      {% for p in site.pages %}
+        {% if p.path contains 'arcmap' %}
+          <li><a href="/gis-cookpook/{{p.path | remove: '.md'}}">{{p.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
     {% elsif page.path contains 'qgis' %}
       <img src="qgis-logo.png" alt="QGIS" />
     {% endif %}
-  </aside>
+  </nav>
   <main>{{ content }}</main>
   <footer><a href='https://github.com/kgjenkins/gis-cookbook/blob/master/{{ page.path }}'>page source</a></footer>
 </body>
