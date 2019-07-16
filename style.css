@@ -7,8 +7,9 @@ body {
 header {
   background: #b31b1b;
   color: #fff;
-  padding: 0.5em 1em;
+  padding: 0.2em 0.5em;
   font-family: 'Candara', 'Arial', 'Helvetica', sans-serif;
+  font-size: 200%;
 }
 header a {
   color: #fff;
