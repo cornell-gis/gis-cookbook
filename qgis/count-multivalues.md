@@ -48,6 +48,8 @@ from temp left join states on temp.place=states.name
 
 This should add a new layer called "state_totals" to your project.  Note that this layer only includes places that are listing in the studies table, due to our use of 'left join', and the output layer contains just the centroid points of the corresponding states.  This will make it easier to visualize the data on the map.  (Details forthcoming...)
 
+![count-multivalues map](image/count-multivalues.png)
+
 This particular query includes some recursive magic that helps to split the values as many times as necessary for all the semicolons.  Thanks to [Samuel Bosch's original recipe](http://www.samuelbosch.com/2018/02/split-into-rows-sqlite.html) which I modified to split on semicolons with or without a following space, and to remove any trailing punctuation from the final output.
 
 
