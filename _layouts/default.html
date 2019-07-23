@@ -17,7 +17,7 @@
     {% endif %}
     {% if software %}
       {% assign lower = software | downcase %}
-      <img src="{{lower}}-logo.png" alt="" />
+      <img src="image/{{lower}}-logo.png" alt="" />
       <p>{{software}} recipes</p>
       <ul>
       {% for p in site.pages %}
