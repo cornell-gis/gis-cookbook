@@ -63,7 +63,7 @@ We use the square root so that the area (not the radius) is proportional to the 
 
 # Note
 
-The SQL query above includes some recursive magic that helps to split the values as many times as necessary for all the semicolons.  Thanks to [Samuel Bosch's original recipe](http://www.samuelbosch.com/2018/02/split-into-rows-sqlite.html) which was modified to split on semicolons with or without a following space, and to remove any trailing punctuation from the final output.
+The SQL query above includes some recursive magic that helps to split the values as many times as necessary for all the semicolons.  Many thanks to [Samuel Bosch's original recipe](http://www.samuelbosch.com/2018/02/split-into-rows-sqlite.html), which we modified to split on semicolons with or without a following space, and to remove any trailing punctuation from the final output.
 
 
 
