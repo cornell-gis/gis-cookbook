@@ -50,7 +50,7 @@ from temp left join states on temp.place=states.name
 
 This should add a new layer called "state_totals" to your project.  Note that, by using a "left join", this layer only includes places that are listed in the studies table, and the output layer contains just the centroid points of the corresponding states.  We do this to make it easier to visualize the data on the map using point styles, which can make it easier to see the data for smaller states like Delaware, for example.
 
-![count-multivalues point style](https://raw.githubusercontent.com/cornell-gis/gis-cookbook/master/qgis/image/count-multivalues-point-style.gif)
+![count-multivalues point style](image/count-multivalues-point-style.gif)
 
 To size the points proportionally by the state total, we can set a data-defined override for the point size, using the following expression:
 
