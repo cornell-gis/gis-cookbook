@@ -22,9 +22,9 @@ West Virginia | 2
 
 QGIS Virtual Layers is a feature that allows us to write an SQL query to dynamically compute a new table or layer.  We can use it to run a query that will create the table of placename totals and automatically join those totals to state polygons from an existing layer.  The following query assumes that we have a polygon layer called `states` that includes a column called `name`.
 
-1. From the Layer menu, select "Create Layer > New Virtual Layer..."
-2. Set the Layer name to "state_totals"
-3. Enter the following SQL query:
+- From the Layer menu, select "Create Layer > New Virtual Layer..."
+- Set the Layer name to "state_totals"
+- Enter the following SQL query:
 
 ```SQL
 with temp as (
@@ -46,7 +46,7 @@ select temp.place, total, centroid(geometry) as geometry
 from temp left join states on temp.place=states.name
 ```
 
-4. Click the "Add" button
+- Click the "Add" button
 
 This should add a new layer called "state_totals" to your project.  Note that, by using a "left join", this layer only includes places that are listed in the studies table, and the output layer contains just the centroid points of the corresponding states.  We do this to make it easier to visualize the data on the map using point styles.  (Details forthcoming...)
 
