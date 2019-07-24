@@ -20,7 +20,7 @@ Pennsylvania  | 1
 Virginia      | 1
 West Virginia | 2
 
-QGIS Virtual Layers is a feature that allows us to write an SQL query to dynamically compute a derivative table or layer.  We can use it to run an SQL query that will create the table of place totals and automatically join those totals to state polygons from an existing layer.  The following query assumes that we have a polygon layer called `states` that includes a column called `name`.
+QGIS Virtual Layers is a feature that allows us to write an SQL query to dynamically compute a new table or layer.  We can use it to run a query that will create the table of placename totals and automatically join those totals to state polygons from an existing layer.  The following query assumes that we have a polygon layer called `states` that includes a column called `name`.
 
 1. From the Layer menu, select "Create Layer > New Virtual Layer..."
 2. Set the Layer name to "state_totals"
@@ -46,11 +46,11 @@ from temp left join states on temp.place=states.name
 ```
 4. Click the "Add" button
 
-This should add a new layer called "state_totals" to your project.  Note that this layer only includes places that are listing in the studies table, due to our use of 'left join', and the output layer contains just the centroid points of the corresponding states.  This will make it easier to visualize the data on the map.  (Details forthcoming...)
+This should add a new layer called "state_totals" to your project.  Note that, by using a "left join", this layer only includes places that are listed in the studies table, and the output layer contains just the centroid points of the corresponding states.  We do this to make it easier to visualize the data on the map using point styles.  (Details forthcoming...)
 
 ![count-multivalues map](image/count-multivalues.png)
 
-This particular query includes some recursive magic that helps to split the values as many times as necessary for all the semicolons.  Thanks to [Samuel Bosch's original recipe](http://www.samuelbosch.com/2018/02/split-into-rows-sqlite.html) which I modified to split on semicolons with or without a following space, and to remove any trailing punctuation from the final output.
+The query above includes some recursive magic that helps to split the values as many times as necessary for all the semicolons.  Thanks to [Samuel Bosch's original recipe](http://www.samuelbosch.com/2018/02/split-into-rows-sqlite.html) which was modified to split on semicolons with or without a following space, and to remove any trailing punctuation from the final output.
 
 
 
