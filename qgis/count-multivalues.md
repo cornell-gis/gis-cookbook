@@ -25,6 +25,7 @@ QGIS Virtual Layers is a feature that allows us to write an SQL query to dynamic
 1. From the Layer menu, select "Create Layer > New Virtual Layer..."
 2. Set the Layer name to "state_totals"
 3. Enter the following SQL query:
+
 ```SQL
 with temp as (
     with recursive splitvalues(id, val, more) as (
@@ -44,6 +45,7 @@ with temp as (
 select temp.place, total, centroid(geometry) as geometry
 from temp left join states on temp.place=states.name
 ```
+
 4. Click the "Add" button
 
 This should add a new layer called "state_totals" to your project.  Note that, by using a "left join", this layer only includes places that are listed in the studies table, and the output layer contains just the centroid points of the corresponding states.  We do this to make it easier to visualize the data on the map using point styles.  (Details forthcoming...)
