@@ -25,7 +25,7 @@ QGIS Virtual Layers is a feature that allows us to write an SQL query to dynamic
 1. From the Layer menu, select "Create Layer > New Virtual Layer..."
 2. Set the Layer name to "state_totals"
 3. Enter the following SQL query:
-```
+```SQL
 with temp as (
     with recursive splitvalues(id, val, more) as (
         select id, '', replace(place, '; ', ';') || ';'
