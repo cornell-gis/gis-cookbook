@@ -45,11 +45,14 @@ with temp as (
     group by val
     order by val
 )
-select temp.place, total, centroid(geometry) as geometry
+select temp.place, total, st_centroid(geometry) as geometry
 from temp left join states on temp.place=states.name
 ```
-
+- Expand the Geometry section of the dialog, and set:
+    - Geometry column = geometry
+    - Type = Point
 - Click the "Add" button
+- If you are prompted to select a CRS, choose the same CRS of your states polygons
 
 This should add a new layer called "state_totals" to your project.  Note that, by using a "left join", this layer only includes places that are listed in the studies table, and the output layer contains just the centroid points of the corresponding states.  We do this to make it easier to visualize the data on the map using point styles, which can make it easier to see the data for smaller states like Delaware, for example.
 
